@@ -21,6 +21,7 @@ export default function Counter() {
         >
           Decrement
         </button>
+        {/* Reset button added */}
         <button
           aria-label="Reset"
           onClick={() => dispatch(reset())}
