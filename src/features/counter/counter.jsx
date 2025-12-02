@@ -1,9 +1,9 @@
-import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment, reset } from './counterSlice'
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment, reset } from "./counterSlice";
 
 export default function Counter() {
-  const count = useSelector((state) => state.counter.value)
-  const dispatch = useDispatch()
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
 
   return (
     <div>
@@ -21,13 +21,10 @@ export default function Counter() {
         >
           Decrement
         </button>
-        <button
-          aria-label="Reset"
-          onClick={() => dispatch(reset())}
-        >
+        <button aria-label="Reset" onClick={() => dispatch(reset())}>
           Reset
         </button>
       </div>
     </div>
-  )
+  );
 }
